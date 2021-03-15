@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    imagename = "aliaspace/gdal-alpine-ultrasmall"
+    imagename = "mcerolini/eo4africa"
     registryCredential = 'mcerolini'
     dockerImage = ''
   }
