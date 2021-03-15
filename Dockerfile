@@ -1,15 +1,11 @@
 ##
-# osgeo/gdal:alpine-ultrasmall
+# aliaspace/eo4africa:docker-gdal-alpine-ultrasmall
 
 # This file is available at the option of the licensee under:
 # Public domain
-# or licensed under X/MIT (LICENSE.TXT) Copyright 2019 Even Rouault <even.rouault@spatialys.com>
 
 ARG ALPINE_VERSION=3.13
 FROM alpine:${ALPINE_VERSION} as builder
-
-# Derived from osgeo/proj by Howard Butler <howard@hobu.co>
-LABEL maintainer="Even Rouault <even.rouault@spatialys.com>"
 
 # Setup build env for PROJ
 RUN apk add --no-cache wget curl unzip make cmake libtool autoconf automake pkgconfig g++ sqlite sqlite-dev
